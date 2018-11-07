@@ -1,0 +1,20 @@
+<target name="junitTest" depends="run">
+	<junit printsummary="on" fork="true" showoutput="true">
+		<classpath>
+			<fileset dir="${lib.dir}" includes="**/*.jar"/>
+			<pathelement path="${dest}"/>
+		</classpath>
+		<formatter type="xml"/>
+		<batchtest todir="${report folder}"
+			<fileset dir="${dest}">
+				 <include name="**/*Test*.*"/>
+			</fileset>
+		</batchtest>
+	</junit>
+	<junitreport todir="${report folder">
+		<fileset dir="${report folder}">
+				 <include name="TEST-*.xml"/>
+		</fileset>
+		<report format="frames" todir="${report folder}"/>
+	</junitreport>
+</target>

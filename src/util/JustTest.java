@@ -1,4 +1,4 @@
-package test1_2;
+package util;
 
 import static org.junit.Assert.*;
 
@@ -14,4 +14,5 @@ public class JustTest {
 		assertEquals("No", tool.strJust("1.256"));
 		assertEquals("No", tool.strJust("jshd"));
 	}
+
 }

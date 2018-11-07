@@ -1,4 +1,4 @@
-package test1_2;
+package util;
 
 import java.util.Scanner;
 import org.apache.commons.lang3.StringUtils;

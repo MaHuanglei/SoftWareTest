@@ -1,4 +1,4 @@
-package test1_2;
+package util;
 
 public class SomeToolEx extends SomeTool{
 	public int strcmp(String str1, String str2){
